@@ -5,7 +5,7 @@ from flask import Flask
 # #import numpy as np
 # import json
 
-# app = Flask(__name__)
+app = Flask(__name__)
 # cors = CORS(app)
 # app.config['CORS_HEADERS'] = 'Content-Type'
 # #
