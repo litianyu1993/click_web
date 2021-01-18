@@ -24,18 +24,18 @@ class MyEncoder(json.JSONEncoder):
 def hello_world():
     return 'Hello World!'
 
-es = []
+# es = []
 
-@app.route('/', methods=['POST', 'GET'])
-@cross_origin()
-def login():
-    if request.method == 'POST':
-        es.append(request.data)
+# @app.route('/', methods=['POST', 'GET'])
+# @cross_origin()
+# def login():
+#     if request.method == 'POST':
+#         es.append(request.data)
 
-        return 'ok'
-    else:
-        json_es = json.dumps(es, cls=MyEncoder,indent=4)
-        return json_es
+#         return 'ok'
+#     else:
+#         json_es = json.dumps(es, cls=MyEncoder,indent=4)
+#         return json_es
 
 if __name__ == '__main__':
     app.run()
