@@ -35,3 +35,5 @@ def login():
     else:
         json_es = json.dumps(es, cls=MyEncoder,indent=4)
         return json_es
+if __name__ == "__main__":
+    app.run(ssl_context='adhoc')
