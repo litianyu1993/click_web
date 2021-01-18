@@ -1,9 +1,5 @@
 
-from flask import Flask, request
-from flask_cors import CORS, cross_origin
-from flask import jsonify, Response
-import numpy as np
-import json
+from flask import Flask
 
 app = Flask(__name__)
 # cors = CORS(app)
