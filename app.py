@@ -23,7 +23,7 @@ class MyEncoder(json.JSONEncoder):
 def hello_world():
     return 'Hello World!'
 
-es = []
+es = ['dasf']
 
 @app.route('/', methods=['POST', 'GET'])
 @cross_origin()
